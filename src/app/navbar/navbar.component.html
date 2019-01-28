@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar-left menuIcon">
+    <img width="48" src="../../assets/images/pokeballicon.png" alt="">
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link btn-active" routerLink="/home" (click)="resetEditButton()" *ngIf="router.url == '/home'">Find Pokemons<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link btn-noactive" routerLink="/home" (click)="resetEditButton()" *ngIf="router.url != '/home'">Find Pokemons<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link btn-active" routerLink="/mypokedex" *ngIf="router.url != '/home'">My Pokedex</a>
+      <a class="nav-item nav-link btn-noactive" routerLink="/mypokedex" *ngIf="router.url == '/home'">My Pokedex</a>
+    </div>
+
+    <div class="navbar-nav ml-auto" *ngIf="router.url == '/mypokedex'">
+
+      <div class="nav-item searchText">
+        <input (keyup)="onKey($event)" type="text" class="form-control" placeholder="Search Pokemon Name" aria-describedby="basic-addon1">
+      </div>
+
+      <a class="nav-item">
+          <button class="nav-item nav-link btn btn-danger font-weight-bold" *ngIf="message === 'show'" data-toggle="modal" data-target="#deleteAllModal" style="margin-right:10px">Delete All Pokemons</button>
+      </a>
+      <a class="nav-item">
+            <button class="nav-item nav-link btn btn-warning font-weight-bold" (click)="toggleTools()" *ngIf="message === 'hide'">Edit Pokemons</button>
+            <button class="nav-item nav-link btn btn-warning font-weight-bold" (click)="toggleTools()" *ngIf="message === 'show'">Stop Edit</button>
+        </a>
+    </div>
+  </div>
+
+</nav>
+
+<!-- Modal Delete ALL -->
+<div class="modal fade" id="deleteAllModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Do you want to delete All your Pokemons?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          The Pokemons will be erased permanently.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="deleteAllPokemons('null')">Delete All</button>
+      </div>
+    </div>
+  </div>
+</div>

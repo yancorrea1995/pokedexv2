@@ -1,0 +1,48 @@
+html,body{
+  height:100%;
+}
+
+
+.imgLoader {
+  height: 100% !important;
+}
+
+.progress {
+  background-color: lightgray;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+
+.pokemonTypes {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.pokemonType {
+  color: #fff;
+  border-radius: 2px;
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin-right: 5px;
+  padding: 1px 10px 5px;
+}
+
+.jumbotron {
+  padding: 1em 1em;
+  overflow-y: auto;
+}
+
+.sepButton {
+  margin: 10px;
+}
+
+.goBack {
+  float: left;
+}

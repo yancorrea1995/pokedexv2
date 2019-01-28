@@ -1,0 +1,24 @@
+.btn-active {
+  color: red !important;
+}
+
+.btn-noactive {
+  color: white !important;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn {
+  color: white !important;
+}
+
+.searchText {
+  margin: 0px 10px 0px 10px;
+}
+
+input {
+  height: 100%;
+}

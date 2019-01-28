@@ -1,0 +1,47 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body{
+  height:100%;
+}
+.card{
+  min-width: 200px;
+  max-width: 250px;
+  margin: 5px 3px 5px 3px;
+}
+
+.card-footer {
+  color: #e74c3c;
+  text-align: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+.clickableCard {
+  cursor: pointer;
+}
+
+.pokemonGrid {
+  height: calc(100% - 60px);
+  overflow-y: scroll !important;
+}
+
+.imgLoader {
+  height: 100% !important;
+}
+
+input {
+  width: 30%;
+  margin: auto;
+}
+
+.filterCenter {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}

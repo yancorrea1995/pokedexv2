@@ -1,0 +1,170 @@
+.progress {
+  background-color: lightgray;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+
+.pokemonTypes {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.pokemonType {
+  color: #fff;
+  border-radius: 2px;
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin-right: 5px;
+  padding: 1px 10px 5px;
+}
+
+.jumbotron {
+  padding: 1em 1em;
+  overflow-y: auto;
+}
+
+.sepButton {
+  margin: 10px;
+}
+
+.pokeballLoader {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+img {
+  background-color: transparent;
+}
+
+.waitSearch {
+  background-image: url('../../../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.buttonSearch {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 153, 51, 0.7); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid green;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttonSearch:hover {
+  border-color:darkgreen;
+  background-color: rgba(0, 153, 51, 0.9);
+}
+
+/*MODAL STYLE*/
+
+.modal-confirm {
+  color: #434e65;
+  width: 525px;
+}
+.modal-confirm .modal-content {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+.modal-confirm .modal-header {
+  background: #47c9a2;
+  border-bottom: none;
+      position: relative;
+  text-align: center;
+  margin: -20px -20px 0;
+  border-radius: 5px 5px 0 0;
+  padding: 35px;
+}
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 0;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+.modal-confirm .close {
+      position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  text-shadow: none;
+  opacity: 0.5;
+}
+.modal-confirm .close:hover {
+  opacity: 0.8;
+}
+.modal-confirm .icon-box {
+  color: #fff;
+  width: 95px;
+  height: 95px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 9;
+  border: 5px solid #fff;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+}
+.modal-confirm .icon-box i {
+  font-size: 64px;
+  margin: -4px 0 0 -4px;
+}
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
+
+.modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 6px 20px;
+    border: none;
+  }
+
+.modal-confirm .btnGoPokedex:hover, .modal-confirm .btn:focus {
+  background: #eda645;
+  outline: none;
+}
+
+.modal-confirm .btn span {
+  margin: 1px 3px 0;
+  float: left;
+}
+
+.modal-confirm .btn i {
+  margin-left: 1px;
+  font-size: 20px;
+  float: right;
+}
+
+.btnGoPokedex {
+  background: #eeb711;
+}
